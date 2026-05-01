@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en-KE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <title>Vikram Plumbing | Project Gallery – Real Work, Real Quality</title>
+  <meta name="description" content="Explore our extensive gallery of completed plumbing projects across Kenya: kitchens, bathrooms, industrial systems, fire pumps, and more. Each image tells a story." />
+  <meta name="keywords" content="plumbing gallery Kenya, bathroom renovation photos, pipe installation images, fire pump system pictures, plumbing portfolio" />
+  <meta name="author" content="Vikram Plumbing Services" />
+
+  <meta property="og:title" content="Vikram Plumbing – Visual Portfolio of Projects" />
+  <meta property="og:description" content="See our craftsmanship in action. Over 30+ real plumbing projects with descriptions." />
+  <meta property="og:image" content="https://i.pinimg.com/736x/5e/68/15/5e6815a4769c94348d08ed61716becb3.jpg" />
+  <meta property="og:url" content="https://vikramplumbing.co.ke/gallery.html" />
+
+  <link rel="icon" href="https://i.pinimg.com/736x/5e/68/15/5e6815a4769c94348d08ed61716becb3.jpg" type="image/jpeg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --primary-dark: #0B2B5E;
+      --primary: #1E3A6F;
+      --accent: #F59E0B;
+      --accent-hover: #D97706;
+      --gray-bg: #F8FAFE;
+      --gray-light: #F1F5F9;
+      --text-dark: #0F172A;
+      --text-muted: #475569;
+      --white: #FFFFFF;
+      --card-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--text-dark); line-height: 1.6; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    .section { padding: 80px 0; }
+    .section-title { font-size: 2.5rem; font-weight: 800; text-align: center; margin-bottom: 16px; color: var(--primary-dark); }
+    .section-title span { color: var(--accent); }
+    .section-subtitle { text-align: center; font-size: 1.05rem; color: var(--text-muted); max-width: 750px; margin: 0 auto 56px; }
+    .btn-primary {
+      background: var(--accent); color: var(--primary-dark); padding: 14px 36px; border-radius: 60px; font-weight: 700;
+      border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; transition: 0.25s;
+      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+    }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); color: var(--white); }
+    .btn-outline-light { background: transparent; border: 2px solid var(--white); color: var(--white); padding: 10px 28px; border-radius: 40px; font-weight: 600; transition: 0.2s; display: inline-block; }
+    .btn-outline-light:hover { background: var(--white); color: var(--primary-dark); }
+
+    .navbar {
+      background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+      position: sticky; top: 0; z-index: 1000; padding: 12px 32px; border-bottom: 1px solid rgba(203,213,225,0.4);
+    }
+    .nav-container { max-width: 1280px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .logo-area { display: flex; align-items: center; gap: 12px; }
+    .logo-img { height: 48px; width: auto; border-radius: 12px; object-fit: contain; }
+    .brand-name { font-size: 1.6rem; font-weight: 800; color: var(--primary-dark); letter-spacing: -0.4px; }
+    .brand-name span { color: var(--accent); }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { font-weight: 600; color: var(--primary-dark); transition: 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+    .menu-toggle { display: none; font-size: 28px; cursor: pointer; color: var(--primary-dark); }
+
+    /* gallery specific */
+    .gallery-hero {
+      background: linear-gradient(115deg, rgba(11,43,94,0.92), rgba(30,58,111,0.88)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&auto=format');
+      background-size: cover; background-position: center; padding: 80px 0; text-align: center; color: var(--white);
+    }
+    .gallery-hero h1 { font-size: 3rem; font-weight: 800; margin-bottom: 16px; }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .gallery-item {
+      background: var(--white);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1px solid #eef2ff;
+    }
+    .gallery-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 35px rgba(245, 158, 11, 0.12);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+    .gallery-caption {
+      padding: 1.2rem;
+    }
+    .gallery-caption h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: var(--primary-dark);
+    }
+    .gallery-caption p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .gallery-caption .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--primary-dark);
+      padding: 4px 12px;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    footer {
+      background: var(--primary-dark);
+      color: #CDDFE7;
+      padding: 48px 0 24px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      margin-bottom: 48px;
+    }
+    .footer-contact-block h3, .footer-form-block h3 { color: var(--white); margin-bottom: 20px; }
+    .contact-detail { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+    .contact-detail i { width: 28px; color: var(--accent); }
+    .footer-form-block input, .footer-form-block textarea {
+      width: 100%; padding: 12px 16px; margin-bottom: 16px; border-radius: 20px; border: none; font-family: inherit;
+    }
+    .footer-bottom {
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px;
+      border-top: 1px solid #2D5A7A; padding-top: 32px; margin-top: 16px;
+    }
+    .footer-bottom-col a { color: #CDDFE7; display: block; margin-bottom: 8px; text-decoration: none; }
+    .footer-bottom-col a:hover { color: var(--accent); }
+    .trust-badge img { width: 70px; border-radius: 18px; margin-top: 10px; }
+
+    @media (max-width: 900px) {
+      .nav-links { display: none; width: 100%; flex-direction: column; background: var(--white); padding: 20px; border-radius: 28px; margin-top: 16px; }
+      .nav-links.active { display: flex; }
+      .menu-toggle { display: block; }
+      .gallery-hero h1 { font-size: 2rem; }
+      .gallery-grid { gap: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo-area">
+      <img class="logo-img" src="https://i.pinimg.com/736x/82/e2/ac/82e2acbb3205823110f5fd7adf3914bf.jpg" alt="Vikram Plumbing Logo" />
+      <div class="brand-name">Vikram <span>Plumbing</span></div>
+    </div>
+    <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="gallery-hero">
+  <div class="container">
+    <h1>Our Visual <span style="color:#FCD34D;">Portfolio</span></h1>
+    <p style="font-size:1.2rem; max-width:700px; margin:0 auto;">Over 40 real projects captured on site – from kitchen renovations to industrial fire systems.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Project <span>Highlights</span></h2>
+    <p class="section-subtitle">Each image represents quality workmanship, clean installations, and satisfied clients across Kenya.</p>
+
+    <div class="gallery-grid">
+      <!-- Image 1 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/736x/44/0e/f0/440ef00057875574e56cbbe7abdb049f.jpg" alt="Modern bathroom faucet installation">
+        <div class="gallery-caption">
+          <h3>Contemporary Bathroom Faucet</h3>
+          <p>High-neck brushed gold mixer installed in a Westlands residence.</p>
+          <span class="badge">Bathroom</span>
+        </div>
+      </div>
+      <!-- Image 2 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/736x/25/2d/46/252d46e78b531a803be272aed145357a.jpg" alt="Frameless glass shower enclosure">
+        <div class="gallery-caption">
+          <h3>Luxury Glass Shower</h3>
+          <p>Frameless shower with rain head and thermostatic valve.</p>
+          <span class="badge">Bathroom</span>
+        </div>
+      </div>
+      <!-- Image 3 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/736x/9a/db/fa/9adbfa2e89008054f428c6f3fe7280d8.jpg" alt="PPR pipe manifold installation">
+        <div class="gallery-caption">
+          <h3>PPR Water Distribution Manifold</h3>
+          <p>Neat manifold setup for a multi-storey apartment in Eldoret.</p>
+          <span class="badge">Piping</span>
+        </div>
+      </div>
+      <!-- Image 4 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/736x/1d/75/0a/1d750af353474d492d78ae8c0be7df13.jpg" alt="Commercial washroom with gold finishes">
+        <div class="gallery-caption">
+          <h3>Commercial Washroom Upgrade</h3>
+          <p>High-end basin mixers for a hotel in Nairobi.</p>
+          <span class="badge">Commercial</span>
+        </div>
+      </div>
+      <!-- Image 5 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/736x/94/5c/24/945c24d260b50a7e9388a8e09c93e215.jpg" alt="Industrial water filtration system">
+        <div class="gallery-caption">
+          <h3>Multi-Stage Filtration Plant</h3>
+          <p>Reverse osmosis and UV system for a beverage factory.</p>
+          <span class="badge">Industrial</span>
+        </div>
+      </div>
+      <!-- Image 6 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/736x/19/46/c5/1946c580123398e02968fd2481ac3197.jpg" alt="Kitchen sink plumbing">
+        <div class="gallery-caption">
+          <h3>Modern Kitchen Sink Setup</h3>
+          <p>Under-counter sink with waste disposal unit.</p>
+          <span class="badge">Kitchen</span>
+        </div>
+      </div>
+      <!-- Image 7 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/736x/80/e5/33/80e533bc0c835b1bb22e422a03758f82.jpg" alt="Fire pump system installation">
+        <div class="gallery-caption">
+          <h3>Industrial Fire Pump Set</h3>
+          <p>Electric fire pump with jockey pump for a warehouse.</p>
+          <span class="badge">Fire Safety</span>
+        </div>
+      </div>
+      <!-- Image 8 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/736x/a5/93/11/a59311280c0210e4d423b68ac4907a4a.jpg" alt="Fire pump controller">
+        <div class="gallery-caption">
+          <h3>Fire Pump Control Panel</h3>
+          <p>Fully automated fire suppression system.</p>
+          <span class="badge">Fire Safety</span>
+        </div>
+      </div>
+      <!-- Image 9 -->
+      <div class="gallery-item fade-in">
+        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&auto=format" alt="Drain cleaning high pressure">
+        <div class="gallery-caption">
+          <h3>High-Pressure Drain Jetting</h3>
+          <p>Removing years of buildup in a commercial kitchen drain.</p>
+          <span class="badge">Drainage</span>
+        </div>
+      </div>
+      <!-- Image 10 -->
+      <div class="gallery-item fade-in">
+        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&auto=format" alt="Water heater repair">
+        <div class="gallery-caption">
+          <h3>Solar Water Heater Service</h3>
+          <p>Cleaning and anode replacement for a residential system.</p>
+          <span class="badge">Water Heaters</span>
+        </div>
+      </div>
+      <!-- Image 11 -->
+      <div class="gallery-item fade-in">
+        <img src="https://images.unsplash.com/photo-1585704032915-5e16c033f649?w=600&auto=format" alt="Leak detection with thermal camera">
+        <div class="gallery-caption">
+          <h3>Thermal Leak Detection</h3>
+          <p>Non-invasive detection of hidden pipe leaks.</p>
+          <span class="badge">Leak Detection</span>
+        </div>
+      </div>
+      <!-- Image 12 -->
+      <div class="gallery-item fade-in">
+        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&auto=format" alt="Outdoor tap and irrigation">
+        <div class="gallery-caption">
+          <h3>Garden Irrigation System</h3>
+          <p>Automated sprinkler setup for a large lawn.</p>
+          <span class="badge">Outdoor</span>
+        </div>
+      </div>
+      <!-- Image 13 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/736x/5e/6a/b7/5e6ab764dfa64f5bb1413257040eb39f.jpg" alt="Vertical pipe riser">
+        <div class="gallery-caption">
+          <h3>High-Rise Riser Pipes</h3>
+          <p>PPR riser installation for a 12-story building.</p>
+          <span class="badge">High-Rise</span>
+        </div>
+      </div>
+      <!-- Image 14 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/736x/0b/9a/e0/0b9ae06e0752e329ce68405ce09b1c44.jpg" alt="Pressure booster pump">
+        <div class="gallery-caption">
+          <h3>Booster Pump System</h3>
+          <p>Constant pressure pump for a residential complex.</p>
+          <span class="badge">Pumping</span>
+        </div>
+      </div>
+      <!-- Image 15 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/1200x/83/ca/fb/83cafba5cc3994c143c935f54ef5b9df.jpg" alt="School bathroom renovation">
+        <div class="gallery-caption">
+          <h3>School Restroom Renovation</h3>
+          <p>Durable fixtures and low-flow toilets for a primary school.</p>
+          <span class="badge">Education</span>
+        </div>
+      </div>
+      <!-- Image 16 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/1200x/c8/96/89/c8968930d72133a605e0c987f1b4a4a5.jpg" alt="Hospital medical gas lines">
+        <div class="gallery-caption">
+          <h3>Medical Gas Piping</h3>
+          <p>Oxygen and vacuum lines for a private hospital.</p>
+          <span class="badge">Healthcare</span>
+        </div>
+      </div>
+      <!-- Image 17 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/1200x/ac/2c/b3/ac2cb33d5d2c5ab92abf4dce273e10c4.jpg" alt="Real estate bulk plumbing">
+        <div class="gallery-caption">
+          <h3>Mass Housing Plumbing</h3>
+          <p>Rough-in for 50-unit apartment project.</p>
+          <span class="badge">Real Estate</span>
+        </div>
+      </div>
+      <!-- Image 18 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/1200x/a5/1e/44/a51e446700e0b15190d74bd70060e572.jpg" alt="Farm irrigation system">
+        <div class="gallery-caption">
+          <h3>Drip Irrigation for Farm</h3>
+          <p>Water-efficient system for vegetable crops.</p>
+          <span class="badge">Agriculture</span>
+        </div>
+      </div>
+      <!-- Image 19 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/1200x/4e/99/45/4e99456692ae225cc2825b33a36ccffc.jpg" alt="Data center cooling pipes">
+        <div class="gallery-caption">
+          <h3>Data Center Cooling Loop</h3>
+          <p>Chilled water piping for server room.</p>
+          <span class="badge">Critical Systems</span>
+        </div>
+      </div>
+      <!-- Image 20 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/1200x/cb/8d/59/cb8d590928d9f01d9736e7e9eacfa57a.jpg" alt="Municipal water main repair">
+        <div class="gallery-caption">
+          <h3>Water Main Repair</h3>
+          <p>Emergency fix for a burst municipal line.</p>
+          <span class="badge">Municipal</span>
+        </div>
+      </div>
+      <!-- Image 21 -->
+      <div class="gallery-item fade-in">
+        <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=600&auto=format" alt="Swimming pool pump room">
+        <div class="gallery-caption">
+          <h3>Pool Pump & Filter Setup</h3>
+          <p>Complete circulation system for a resort pool.</p>
+          <span class="badge">Swimming Pools</span>
+        </div>
+      </div>
+      <!-- Image 22 -->
+      <div class="gallery-item fade-in">
+        <img src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?w=600&auto=format" alt="Laundromat plumbing">
+        <div class="gallery-caption">
+          <h3>Commercial Laundry Hookups</h3>
+          <p>High-capacity washer connections for a laundromat.</p>
+          <span class="badge">Laundry</span>
+        </div>
+      </div>
+      <!-- Image 23 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/736x/24/16/85/2416851b8b94b3314826521bfd229be4.jpg" alt="Shopping mall food court grease trap">
+        <div class="gallery-caption">
+          <h3>Grease Interceptor Installation</h3>
+          <p>Large-capacity trap for a mall food court.</p>
+          <span class="badge">Retail</span>
+        </div>
+      </div>
+      <!-- Image 24 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/1200x/4c/00/89/4c0089ffff54fc923b0f8a3c291430d4.jpg" alt="Construction site temporary plumbing">
+        <div class="gallery-caption">
+          <h3>Site Temporary Facilities</h3>
+          <p>Portable toilets and water supply for construction crew.</p>
+          <span class="badge">Construction</span>
+        </div>
+      </div>
+      <!-- Image 25 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/736x/43/6f/5b/436f5b87db39481cf08f35c8a9ddf169.jpg" alt="Gas pipe installation">
+        <div class="gallery-caption">
+          <h3>LPG Gas Piping</h3>
+          <p>Copper gas line for a commercial kitchen.</p>
+          <span class="badge">Gas Plumbing</span>
+        </div>
+      </div>
+      <!-- Image 26 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/1200x/cb/a6/37/cba637a52d312e66dd14e6a6c404ce76.jpg" alt="Sewer line camera inspection">
+        <div class="gallery-caption">
+          <h3>CCTV Drain Inspection</h3>
+          <p>Identifying cracks and root intrusion.</p>
+          <span class="badge">Drainage</span>
+        </div>
+      </div>
+      <!-- Image 27 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/1200x/d4/21/0d/d4210d959bcb72d66f40cf2d75e50a74.jpg" alt="Hotel bathroom renovation">
+        <div class="gallery-caption">
+          <h3>Hotel Guest Bathroom</h3>
+          <p>Complete remodel with luxury fixtures.</p>
+          <span class="badge">Hospitality</span>
+        </div>
+      </div>
+      <!-- Image 28 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/1200x/a9/db/1e/a9db1e8476daceab2ea930efab2c7be6.jpg" alt="Rainwater harvesting tank">
+        <div class="gallery-caption">
+          <h3>Rainwater Collection System</h3>
+          <p>Underground tank and pump for irrigation.</p>
+          <span class="badge">Sustainability</span>
+        </div>
+      </div>
+      <!-- Image 29 -->
+      <div class="gallery-item fade-in">
+        <img src="https://i.pinimg.com/736x/82/e2/ac/82e2acbb3205823110f5fd7adf3914bf.jpg" alt="Vikram team on site">
+        <div class="gallery-caption">
+          <h3>Our Team at Work</h3>
+          <p>Installing a complex manifold system.</p>
+          <span class="badge">Team</span>
+        </div>
+      </div>
+      <!-- Image 30 -->
+      <div class="gallery-item fade-in">
+        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&auto=format" alt="New construction rough-in">
+        <div class="gallery-caption">
+          <h3>New Building Rough-In</h3>
+          <p>Underground drainage and water supply for a villa.</p>
+          <span class="badge">New Build</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (identical to required structure) -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-contact-block">
+        <h3>Plumbing crisis? We're ready 24/7</h3>
+        <p>Call the hotline or fill the form – our team will be at your door within the hour.</p>
+        <a href="contact.html" class="btn-outline-light" style="margin: 20px 0; display: inline-block;">Get Urgent Help →</a>
+        
+        <h3 style="margin-top: 30px;">Request Service or Quote</h3>
+        <p>Tell us about your plumbing needs, and we’ll get back to you within 30 minutes.</p>
+        
+        <div class="contact-detail"><i class="fas fa-phone-alt"></i><span>+254 722 135 507</span></div>
+        <div class="contact-detail"><i class="fas fa-envelope"></i><span>Vplumbing@gmail.com</span></div>
+        <div class="contact-detail"><i class="fas fa-map-marker-alt"></i><span>Eldoret / Nairobi, Kenya</span></div>
+        <p><strong>🚨 Emergency hotline:</strong> 24/7 for burst pipes, gas leaks, or drain floods.</p>
+        <div class="trust-badge"><img src="https://i.pinimg.com/736x/5e/68/15/5e6815a4769c94348d08ed61716becb3.jpg" alt="trust badge"></div>
+      </div>
+
+      <div class="footer-form-block">
+        <h3>Send a message</h3>
+        <form id="footerContactForm">
+          <input type="text" placeholder="Full name" required>
+          <input type="email" placeholder="Email address" required>
+          <input type="tel" placeholder="Phone number">
+          <textarea rows="4" placeholder="Describe your issue or required service..." required></textarea>
+          <button type="submit" class="btn-primary" style="width:100%;">Send Request →</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-col">
+        <img src="https://i.pinimg.com/736x/82/e2/ac/82e2acbb3205823110f5fd7adf3914bf.jpg" style="height: 48px; border-radius: 12px; margin-bottom: 12px;" alt="Vikram Logo">
+        <p>Where Trust Flows.<br>Rooted in Excellence, Flowing with Reliability.</p>
+      </div>
+      <div class="footer-bottom-col">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-bottom-col">
+        <h4>Support</h4>
+        <a href="#">Emergency: +254722135507</a>
+        <a href="#">service@vikramplumbing.co.ke</a>
+      </div>
+    </div>
+    <div class="copyright" style="text-align: center; margin-top: 32px; padding-top: 24px; border-top: 1px solid #2D5A7A;">
+      © 2026 Vikram Plumbing Services — Excellence in Plumbing & Drainage. Visual proof of quality.
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('mobile-menu');
+  const navLinksEl = document.getElementById('nav-links');
+  if (menuBtn && navLinksEl) {
+    menuBtn.addEventListener('click', () => navLinksEl.classList.toggle('active'));
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      const target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+        if (navLinksEl && navLinksEl.classList.contains('active')) navLinksEl.classList.remove('active');
+      }
+    });
+  });
+  const fadeElements = document.querySelectorAll('.fade-in');
+  const fadeObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  fadeElements.forEach(el => fadeObserver.observe(el));
+
+  const footerForm = document.getElementById('footerContactForm');
+  if (footerForm) {
+    footerForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('✅ Request sent! Vikram Plumbing will reply within 30 minutes. For emergencies, call +254722135507.');
+      footerForm.reset();
+    });
+  }
+</script>
+</body>
+</html>
