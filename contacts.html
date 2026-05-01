@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-KE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <title>Vikram Plumbing | Contact Us – 24/7 Emergency & General Inquiries</title>
+  <meta name="description" content="Reach Vikram Plumbing in Eldoret & Nairobi. Call our emergency hotline, send a message, or visit our office. Fast response guaranteed." />
+  <meta name="keywords" content="contact plumber Kenya, emergency plumber Eldoret, plumbing service Nairobi, phone number, plumbing quote" />
+  <meta name="author" content="Vikram Plumbing Services" />
+
+  <meta property="og:title" content="Vikram Plumbing – Contact & Emergency Support" />
+  <meta property="og:description" content="Get in touch with Kenya's trusted plumbing team. 24/7 hotline, online form, and office locations." />
+  <meta property="og:image" content="https://i.pinimg.com/736x/5e/68/15/5e6815a4769c94348d08ed61716becb3.jpg" />
+  <meta property="og:url" content="https://vikramplumbing.co.ke/contact.html" />
+
+  <link rel="icon" href="https://i.pinimg.com/736x/5e/68/15/5e6815a4769c94348d08ed61716becb3.jpg" type="image/jpeg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --primary-dark: #0B2B5E;
+      --primary: #1E3A6F;
+      --accent: #F59E0B;
+      --accent-hover: #D97706;
+      --gray-bg: #F8FAFE;
+      --gray-light: #F1F5F9;
+      --text-dark: #0F172A;
+      --text-muted: #475569;
+      --white: #FFFFFF;
+      --card-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--text-dark); line-height: 1.6; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    .section { padding: 80px 0; }
+    .section-title { font-size: 2.5rem; font-weight: 800; text-align: center; margin-bottom: 16px; color: var(--primary-dark); }
+    .section-title span { color: var(--accent); }
+    .section-subtitle { text-align: center; font-size: 1.05rem; color: var(--text-muted); max-width: 750px; margin: 0 auto 56px; }
+    .btn-primary {
+      background: var(--accent); color: var(--primary-dark); padding: 14px 36px; border-radius: 60px; font-weight: 700;
+      border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; transition: 0.25s;
+      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+    }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); color: var(--white); }
+    .btn-outline-light { background: transparent; border: 2px solid var(--white); color: var(--white); padding: 10px 28px; border-radius: 40px; font-weight: 600; transition: 0.2s; display: inline-block; }
+    .btn-outline-light:hover { background: var(--white); color: var(--primary-dark); }
+
+    .navbar {
+      background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+      position: sticky; top: 0; z-index: 1000; padding: 12px 32px; border-bottom: 1px solid rgba(203,213,225,0.4);
+    }
+    .nav-container { max-width: 1280px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .logo-area { display: flex; align-items: center; gap: 12px; }
+    .logo-img { height: 48px; width: auto; border-radius: 12px; object-fit: contain; }
+    .brand-name { font-size: 1.6rem; font-weight: 800; color: var(--primary-dark); letter-spacing: -0.4px; }
+    .brand-name span { color: var(--accent); }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { font-weight: 600; color: var(--primary-dark); transition: 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+    .menu-toggle { display: none; font-size: 28px; cursor: pointer; color: var(--primary-dark); }
+
+    /* contact specific */
+    .contact-hero {
+      background: linear-gradient(115deg, rgba(11,43,94,0.92), rgba(30,58,111,0.88)), url('https://images.unsplash.com/photo-1581092335871-44c9e6a6f3e6?auto=format&fit=crop&w=2070&q=80');
+      background-size: cover; background-position: center; padding: 80px 0; text-align: center; color: var(--white);
+    }
+    .contact-hero h1 { font-size: 3rem; font-weight: 800; margin-bottom: 16px; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 3rem;
+      margin: 40px 0;
+    }
+    .contact-card {
+      background: var(--white);
+      border-radius: 32px;
+      padding: 2rem;
+      box-shadow: var(--card-shadow);
+      border: 1px solid #eef2ff;
+      text-align: center;
+      transition: 0.2s;
+    }
+    .contact-card i {
+      font-size: 2.8rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .contact-card h3 {
+      margin-bottom: 1rem;
+      color: var(--primary-dark);
+    }
+    .contact-detail-line {
+      margin: 12px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .form-container {
+      background: var(--gray-bg);
+      border-radius: 48px;
+      padding: 48px;
+      margin: 40px 0;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    input, textarea, select {
+      width: 100%; padding: 14px 20px; border-radius: 20px; border: 1px solid #E2E8F0;
+      font-family: inherit; outline: none; margin-bottom: 16px;
+    }
+    textarea { resize: vertical; }
+    .map-placeholder {
+      background: #EFF6FF;
+      border-radius: 28px;
+      padding: 60px 20px;
+      text-align: center;
+      color: var(--primary-dark);
+      border: 1px dashed var(--accent);
+      margin-top: 30px;
+    }
+
+    footer {
+      background: var(--primary-dark);
+      color: #CDDFE7;
+      padding: 48px 0 24px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      margin-bottom: 48px;
+    }
+    .footer-contact-block h3, .footer-form-block h3 { color: var(--white); margin-bottom: 20px; }
+    .contact-detail { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+    .contact-detail i { width: 28px; color: var(--accent); }
+    .footer-form-block input, .footer-form-block textarea {
+      width: 100%; padding: 12px 16px; margin-bottom: 16px; border-radius: 20px; border: none; font-family: inherit;
+    }
+    .footer-bottom {
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px;
+      border-top: 1px solid #2D5A7A; padding-top: 32px; margin-top: 16px;
+    }
+    .footer-bottom-col a { color: #CDDFE7; display: block; margin-bottom: 8px; text-decoration: none; }
+    .footer-bottom-col a:hover { color: var(--accent); }
+    .trust-badge img { width: 70px; border-radius: 18px; margin-top: 10px; }
+
+    @media (max-width: 900px) {
+      .nav-links { display: none; width: 100%; flex-direction: column; background: var(--white); padding: 20px; border-radius: 28px; margin-top: 16px; }
+      .nav-links.active { display: flex; }
+      .menu-toggle { display: block; }
+      .form-grid { grid-template-columns: 1fr; }
+      .contact-hero h1 { font-size: 2rem; }
+      .form-container { padding: 24px; }
+    }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo-area">
+      <img class="logo-img" src="https://i.pinimg.com/736x/82/e2/ac/82e2acbb3205823110f5fd7adf3914bf.jpg" alt="Vikram Plumbing Logo" />
+      <div class="brand-name">Vikram <span>Plumbing</span></div>
+    </div>
+    <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="contact-hero">
+  <div class="container">
+    <h1>Get in <span style="color:#FCD34D;">Touch</span></h1>
+    <p style="font-size:1.2rem; max-width:700px; margin:0 auto;">24/7 emergency support, fast quotes, and expert advice. Reach us anytime.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-card fade-in">
+        <i class="fas fa-phone-alt"></i>
+        <h3>Emergency Hotline</h3>
+        <p>Available 24 hours, 7 days a week. For burst pipes, gas leaks, or urgent blockages.</p>
+        <div class="contact-detail-line"><i class="fas fa-phone"></i> <strong>+254 722 135 507</strong></div>
+        <div class="contact-detail-line"><i class="fab fa-whatsapp"></i> <strong>WhatsApp same number</strong></div>
+      </div>
+      <div class="contact-card fade-in">
+        <i class="fas fa-envelope"></i>
+        <h3>General Inquiries</h3>
+        <p>For quotes, non-urgent questions, or feedback – we reply within 2 hours.</p>
+        <div class="contact-detail-line"><i class="fas fa-envelope"></i> Vplumbing@gmail.com</div>
+        <div class="contact-detail-line"><i class="fas fa-clock"></i> Mon–Sat: 7am – 9pm</div>
+      </div>
+      <div class="contact-card fade-in">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Our Locations</h3>
+        
+        <p><strong>Nairobi:</strong> </p>
+        <p><em>We serve all major towns across Kenya.</em></p>
+      </div>
+    </div>
+
+    <!-- Combined contact form and map (minimal images) -->
+    <div class="form-container fade-in">
+      <h2 class="section-title" style="font-size: 2rem;">Send us a <span>Message</span></h2>
+      <p class="section-subtitle" style="margin-bottom: 32px;">Fill the form and we’ll respond within 30 minutes.</p>
+      <div class="form-grid">
+        <div>
+          <form id="contactForm">
+            <input type="text" placeholder="Full name *" required>
+            <input type="email" placeholder="Email address *" required>
+            <input type="tel" placeholder="Phone number">
+            <select>
+              <option>Select service needed</option>
+              <option>Emergency repair</option>
+              <option>Installation / Renovation</option>
+              <option>Drain cleaning</option>
+              <option>Water heater</option>
+              <option>General inquiry</option>
+            </select>
+            <textarea rows="5" placeholder="Describe your plumbing issue or request..." required></textarea>
+            <button type="submit" class="btn-primary" style="width:100%;">Send Message →</button>
+          </form>
+        </div>
+        <div>
+          <div class="map-placeholder">
+            <i class="fas fa-map-pin" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem; display: block;"></i>
+            <h4>Service coverage</h4>
+            <p>Eldoret • Nairobi • Kisumu • Nakuru • Mombasa • and all major towns.<br>We travel to your location with fully equipped vans.</p>
+            <div style="margin-top: 20px; font-size: 0.9rem;">
+              <i class="fas fa-location-dot"></i> Accurate GPS dispatch for emergencies
+            </div>
+          </div>
+          <div style="margin-top: 24px; background: #FFF3E5; border-radius: 24px; padding: 20px; text-align: center;">
+            <i class="fas fa-shield-alt" style="color: var(--accent); font-size: 1.8rem;"></i>
+            <p><strong>Verified & Licensed</strong><br>We carry insurance and all technicians are certified.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Business hours + additional contact (text only) -->
+    <div class="fade-in" style="text-align: center; background: var(--gray-light); border-radius: 48px; padding: 40px; margin-top: 20px;">
+      <i class="fas fa-calendar-check" style="font-size: 2.5rem; color: var(--accent);"></i>
+      <h3 style="margin: 16px 0;">Office & Support Hours</h3>
+      <p><strong>Emergency dispatch:</strong> 24/7/365 (including public holidays)<br>
+      <strong>Customer care phone line:</strong> Daily 6:00 AM – 11:00 PM<br>
+      <strong>Email response guarantee:</strong> Within 2 hours during business days</p>
+      <hr style="margin: 24px auto; width: 80px; border-color: var(--accent);">
+      <p>📞 Call us now for immediate assistance: <strong>+254 722 135 507</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (identical to the required structure) -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-contact-block">
+        <h3>Plumbing crisis? We're ready 24/7</h3>
+        <p>Call the hotline or fill the form – our team will be at your door within the hour.</p>
+        <a href="#" class="btn-outline-light" style="margin: 20px 0; display: inline-block;">Get Urgent Help →</a>
+        
+        <h3 style="margin-top: 30px;">Request Service or Quote</h3>
+        <p>Tell us about your plumbing needs, and we’ll get back to you within 30 minutes.</p>
+        
+        <div class="contact-detail"><i class="fas fa-phone-alt"></i><span>+254 722 135 507</span></div>
+        <div class="contact-detail"><i class="fas fa-envelope"></i><span>Vplumbing@gmail.com</span></div>
+        <div class="contact-detail"><i class="fas fa-map-marker-alt"></i><span>Eldoret / Nairobi, Kenya</span></div>
+        <p><strong>🚨 Emergency hotline:</strong> 24/7 for burst pipes, gas leaks, or drain floods.</p>
+       
+      </div>
+
+      <div class="footer-form-block">
+        <h3>Send a message</h3>
+        <form id="footerContactForm">
+          <input type="text" placeholder="Full name" required>
+          <input type="email" placeholder="Email address" required>
+          <input type="tel" placeholder="Phone number">
+          <textarea rows="4" placeholder="Describe your issue or required service..." required></textarea>
+          <button type="submit" class="btn-primary" style="width:100%;">Send Request →</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-col">
+        <img src="https://i.pinimg.com/736x/82/e2/ac/82e2acbb3205823110f5fd7adf3914bf.jpg" style="height: 48px; border-radius: 12px; margin-bottom: 12px;" alt="Vikram Logo">
+        <p>Where Trust Flows.<br>Rooted in Excellence, Flowing with Reliability.</p>
+      </div>
+      <div class="footer-bottom-col">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-bottom-col">
+        <h4>Support</h4>
+        <a href="#">Emergency: +254722135507</a>
+        <a href="#">service@vikramplumbing.co.ke</a>
+      </div>
+    </div>
+    <div class="copyright" style="text-align: center; margin-top: 32px; padding-top: 24px; border-top: 1px solid #2D5A7A;">
+      © 2026 Vikram Plumbing Services — Excellence in Plumbing & Drainage. Visual proof of quality.
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('mobile-menu');
+  const navLinksEl = document.getElementById('nav-links');
+  if (menuBtn && navLinksEl) {
+    menuBtn.addEventListener('click', () => navLinksEl.classList.toggle('active'));
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      const target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+        if (navLinksEl && navLinksEl.classList.contains('active')) navLinksEl.classList.remove('active');
+      }
+    });
+  });
+  const fadeElements = document.querySelectorAll('.fade-in');
+  const fadeObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  fadeElements.forEach(el => fadeObserver.observe(el));
+
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('✅ Message received! A Vikram Plumbing representative will contact you within 30 minutes. For immediate emergencies, call +254722135507.');
+      contactForm.reset();
+    });
+  }
+  const footerForm = document.getElementById('footerContactForm');
+  if (footerForm) {
+    footerForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('✅ Request sent! Vikram Plumbing will reply within 30 minutes. For emergencies, call +254722135507.');
+      footerForm.reset();
+    });
+  }
+</script>
+</body>
+</html>
