@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
-  <title>Vikram Plumbing | Expert Services & Project Gallery - Kenya's Finest</title>
-  <meta name="description" content="Discover Vikram Plumbing's specialized services: drain unblocking, water heater repair, leak detection, pipe relining & full bathroom overhauls. Based in Eldoret & Nairobi." />
-  <meta name="keywords" content="plumber near me Kenya, drain cleaning Eldoret, water heater repair Nairobi, leak detection, pipe relining, bathroom renovation plumber" />
+  <title>Vikram Plumbing | Specialised Service Categories – Kitchen, Industrial, Gas & More</title>
+  <meta name="description" content="Comprehensive plumbing services by category: kitchen, bathroom, gas fitting, industrial, fire systems, water treatment & commercial. Clear rows for easy browsing." />
+  <meta name="keywords" content="gas plumber Kenya, industrial plumbing, fire pump services, water treatment, commercial plumbing, kitchen sink repair" />
   <meta name="author" content="Vikram Plumbing Services" />
 
-  <meta property="og:title" content="Vikram Plumbing – Services & Visual Portfolio" />
-  <meta property="og:description" content="Advanced plumbing services with a gallery of real projects. Reliable, 24/7 expert care." />
+  <meta property="og:title" content="Vikram Plumbing – Service Categories for Every Need" />
+  <meta property="og:description" content="Expert plumbing across Kenya. Each service line detailed separately – from emergency to industrial." />
   <meta property="og:image" content="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&auto=format" />
   <meta property="og:url" content="https://vikramplumbing.co.ke/service.html" />
 
@@ -32,759 +32,392 @@
       --white: #FFFFFF;
       --card-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
     }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--white);
-      color: var(--text-dark);
-      overflow-x: hidden;
-      line-height: 1.6;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 32px;
-    }
-
-    .section {
-      padding: 80px 0;
-    }
-
-    .section-title {
-      font-size: 2.5rem;
-      font-weight: 800;
-      text-align: center;
-      margin-bottom: 16px;
-      color: var(--primary-dark);
-    }
-
-    .section-title span {
-      color: var(--accent);
-    }
-
-    .section-subtitle {
-      text-align: center;
-      font-size: 1.05rem;
-      color: var(--text-muted);
-      max-width: 750px;
-      margin: 0 auto 56px;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--text-dark); line-height: 1.6; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    .section { padding: 80px 0; }
+    .section-title { font-size: 2.5rem; font-weight: 800; text-align: center; margin-bottom: 16px; color: var(--primary-dark); }
+    .section-title span { color: var(--accent); }
+    .section-subtitle { text-align: center; font-size: 1.05rem; color: var(--text-muted); max-width: 750px; margin: 0 auto 56px; }
     .btn-primary {
-      background: var(--accent);
-      color: var(--primary-dark);
-      padding: 14px 36px;
-      border-radius: 60px;
-      font-weight: 700;
-      font-size: 1rem;
-      border: none;
-      cursor: pointer;
-      transition: all 0.25s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
+      background: var(--accent); color: var(--primary-dark); padding: 14px 36px; border-radius: 60px; font-weight: 700;
+      border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; transition: 0.25s;
       box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
     }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); color: var(--white); }
+    .btn-outline-light { background: transparent; border: 2px solid var(--white); color: var(--white); padding: 10px 28px; border-radius: 40px; font-weight: 600; transition: 0.2s; display: inline-block; }
+    .btn-outline-light:hover { background: var(--white); color: var(--primary-dark); }
 
-    .btn-primary:hover {
-      background: var(--accent-hover);
-      transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(245, 158, 11, 0.4);
-      color: var(--white);
-    }
-
-    .btn-outline-light {
-      background: transparent;
-      border: 2px solid var(--white);
-      color: var(--white);
-      padding: 10px 28px;
-      border-radius: 40px;
-      font-weight: 600;
-      transition: 0.2s;
-      display: inline-block;
-    }
-
-    .btn-outline-light:hover {
-      background: var(--white);
-      color: var(--primary-dark);
-      border-color: var(--white);
-    }
-
+    /* navbar identical to index */
     .navbar {
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(8px);
-      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      padding: 12px 32px;
-      border-bottom: 1px solid rgba(203, 213, 225, 0.4);
+      background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+      position: sticky; top: 0; z-index: 1000; padding: 12px 32px; border-bottom: 1px solid rgba(203,213,225,0.4);
     }
-
-    .nav-container {
-      max-width: 1280px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .logo-area {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .logo-img {
-      height: 48px;
-      width: auto;
-      border-radius: 12px;
-      object-fit: contain;
-    }
-
-    .brand-name {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: var(--primary-dark);
-      letter-spacing: -0.4px;
-    }
-
-    .brand-name span {
-      color: var(--accent);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 32px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-weight: 600;
-      color: var(--primary-dark);
-      transition: 0.2s;
-    }
-
-    .nav-links a:hover, .nav-links a.active {
-      color: var(--accent);
-    }
-
-    .menu-toggle {
-      display: none;
-      font-size: 28px;
-      cursor: pointer;
-      color: var(--primary-dark);
-    }
+    .nav-container { max-width: 1280px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    .logo-area { display: flex; align-items: center; gap: 12px; }
+    .logo-img { height: 48px; width: auto; border-radius: 12px; object-fit: contain; }
+    .brand-name { font-size: 1.6rem; font-weight: 800; color: var(--primary-dark); letter-spacing: -0.4px; }
+    .brand-name span { color: var(--accent); }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { font-weight: 600; color: var(--primary-dark); transition: 0.2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+    .menu-toggle { display: none; font-size: 28px; cursor: pointer; color: var(--primary-dark); }
 
     /* service hero */
     .service-hero {
-      background: linear-gradient(115deg, rgba(11,43,94,0.92), rgba(30,58,111,0.88)), url('https://images.unsplash.com/photo-1581092335871-44c9e6a6f3e6?auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
-      background-size: cover;
-      padding: 110px 0;
-      text-align: center;
-      color: var(--white);
+      background: linear-gradient(115deg, rgba(11,43,94,0.92), rgba(30,58,111,0.88)), url('https://images.unsplash.com/photo-1581092335871-44c9e6a6f3e6?auto=format&fit=crop&w=2070&q=80');
+      background-size: cover; background-position: center; padding: 100px 0; text-align: center; color: var(--white);
     }
+    .service-hero h1 { font-size: 3.2rem; font-weight: 800; margin-bottom: 20px; }
 
-    .service-hero h1 {
-      font-size: 3.5rem;
-      font-weight: 800;
-      margin-bottom: 20px;
-    }
-
-    .services-grid {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-
-    .card {
+    /* Each category as a full-width row (no clustering) */
+    .service-category {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      margin-bottom: 70px;
+      flex-wrap: wrap;
       background: var(--white);
-      border-radius: 28px;
-      overflow: hidden;
+      border-radius: 32px;
+      padding: 32px;
       box-shadow: var(--card-shadow);
       border: 1px solid #eef2ff;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 35px rgba(245, 158, 11, 0.12);
-    }
-
-    .service-img {
-      width: 100%;
-      height: 230px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      padding: 1.5rem;
-    }
-
-    .service-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
-
-    .tag {
-      background: var(--accent);
-      color: var(--primary-dark);
-      padding: 0.25rem 1rem;
-      border-radius: 30px;
-      font-size: 0.75rem;
-      font-weight: 700;
-    }
-
-    /* gallery mega grid */
-    .gallery-mega {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.8rem;
-    }
-
-    .gallery-item {
-      border-radius: 24px;
-      overflow: hidden;
-      background: var(--white);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
       transition: 0.2s;
     }
+    .service-category.reverse { flex-direction: row-reverse; }
+    .cat-img-box { flex: 1; border-radius: 28px; overflow: hidden; box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
+    .cat-img-box img { width: 100%; height: 280px; object-fit: cover; display: block; }
+    .cat-details { flex: 1; }
+    .cat-details h3 { font-size: 1.8rem; color: var(--primary-dark); margin-bottom: 16px; display: flex; align-items: center; gap: 12px; }
+    .cat-details h3 i { color: var(--accent); font-size: 2rem; }
+    .service-features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 20px 0; list-style: none; }
+    .service-features li { display: flex; align-items: center; gap: 8px; }
+    .service-features li i { color: var(--accent); }
+    .cat-tag { display: inline-block; background: var(--accent); color: var(--primary-dark); padding: 6px 18px; border-radius: 60px; font-weight: 700; font-size: 0.75rem; margin-top: 12px; }
 
-    .gallery-item img {
-      width: 100%;
-      height: 260px;
-      object-fit: cover;
-      transition: transform 0.4s;
-    }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
 
-    .gallery-item:hover img {
-      transform: scale(1.03);
-    }
-
-    .gallery-caption {
-      padding: 14px;
-      text-align: center;
-      font-weight: 600;
-      background: var(--white);
-    }
-
-    .process-steps {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 32px;
-      margin: 40px 0 20px;
-    }
-
-    .step {
-      background: #FEF9F0;
-      border-radius: 28px;
-      padding: 32px 24px;
-      text-align: center;
-      flex: 1 1 200px;
-      box-shadow: var(--card-shadow);
-    }
-
-    .step-number {
-      width: 52px;
-      height: 52px;
-      background: var(--accent);
-      color: var(--primary-dark);
-      font-weight: 800;
-      font-size: 1.6rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 60px;
-      margin: 0 auto 20px;
-    }
-
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-    }
-
-    .why-item {
-      background: var(--white);
-      border-radius: 28px;
-      padding: 2rem;
-      text-align: center;
-      box-shadow: var(--card-shadow);
-    }
-
-    .why-item i {
-      font-size: 2.5rem;
-      background: #FFF3E5;
-      padding: 16px;
-      border-radius: 60px;
-      color: var(--accent);
-      margin-bottom: 20px;
-    }
-
-    .stats-counter-section {
-      background: var(--primary-dark);
-      padding: 60px 0;
-    }
-
-    .stats-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 32px;
-      text-align: center;
-    }
-
-    .stat-item {
-      flex: 1 1 200px;
-      color: var(--white);
-    }
-
-    .stat-number {
-      font-size: 2.8rem;
-      font-weight: 800;
-      color: var(--accent);
-    }
-
-    .testimonial-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
-
-    .testimonial-card {
-      background: var(--white);
-      border-radius: 28px;
-      padding: 28px;
-      box-shadow: var(--card-shadow);
-      border: 1px solid #f0e7de;
-    }
-
-    .testimonial-card i {
-      color: var(--accent);
-      font-size: 1.8rem;
-      margin-bottom: 14px;
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      background: var(--gray-bg);
-      border-radius: 48px;
-      padding: 48px;
-      gap: 2rem;
-    }
-
-    .contact-detail {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 24px;
-    }
-
-    .contact-detail i {
-      width: 32px;
-      color: var(--accent);
-    }
-
-    input, textarea, select {
-      width: 100%;
-      padding: 14px 20px;
-      border-radius: 18px;
-      border: 1px solid #E2E8F0;
-      font-family: inherit;
-      outline: none;
-    }
-
-    .form-group {
-      margin-bottom: 16px;
-    }
-
+    /* footer and contact block exactly as requested (full footer content) */
     footer {
       background: var(--primary-dark);
       color: #CDDFE7;
       padding: 48px 0 24px;
     }
-
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 40px;
-      margin-bottom: 40px;
+      margin-bottom: 48px;
     }
-
-    .footer-col a {
-      color: #CDDFE7;
-      display: block;
-      margin-bottom: 10px;
+    .footer-contact-block h3, .footer-form-block h3 { color: var(--white); margin-bottom: 20px; }
+    .contact-detail { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+    .contact-detail i { width: 28px; color: var(--accent); }
+    .footer-form-block input, .footer-form-block textarea {
+      width: 100%; padding: 12px 16px; margin-bottom: 16px; border-radius: 20px; border: none; font-family: inherit;
     }
-
-    .footer-col a:hover {
-      color: var(--accent);
+    .footer-bottom {
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px;
+      border-top: 1px solid #2D5A7A; padding-top: 32px; margin-top: 16px;
     }
-
-    .copyright {
-      text-align: center;
-      padding-top: 24px;
-      border-top: 1px solid #2D5A7A;
-    }
-
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease;
-    }
-
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .cta-banner {
-      background: linear-gradient(115deg, #0B2B5E 0%, #F59E0B 100%);
-      border-radius: 48px;
-      padding: 64px 32px;
-      text-align: center;
-      color: var(--white);
-      margin: 40px auto;
-    }
+    .footer-bottom-col a { color: #CDDFE7; display: block; margin-bottom: 8px; text-decoration: none; }
+    .footer-bottom-col a:hover { color: var(--accent); }
+    .trust-badge img { width: 70px; border-radius: 18px; margin-top: 10px; }
 
     @media (max-width: 900px) {
-      .nav-links {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        background: var(--white);
-        padding: 20px;
-        border-radius: 28px;
-        margin-top: 16px;
-      }
-      .nav-links.active {
-        display: flex;
-      }
-      .menu-toggle {
-        display: block;
-      }
-      .service-hero h1 {
-        font-size: 2.3rem;
-      }
-      .contact-grid {
-        padding: 24px;
-      }
+      .nav-links { display: none; width: 100%; flex-direction: column; background: var(--white); padding: 20px; border-radius: 28px; margin-top: 16px; }
+      .nav-links.active { display: flex; }
+      .menu-toggle { display: block; }
+      .service-hero h1 { font-size: 2rem; }
+      .service-category { flex-direction: column !important; padding: 20px; }
+      .service-features { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; }
     }
   </style>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo-area">
-        <img class="logo-img" src="https://i.pinimg.com/736x/82/e2/ac/82e2acbb3205823110f5fd7adf3914bf.jpg" alt="Vikram Plumbing Logo" />
-        <div class="brand-name">Vikram <span>Plumbing</span></div>
-      </div>
-      <div class="menu-toggle" id="mobile-menu">
-        <i class="fas fa-bars"></i>
-      </div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="service.html" class="active">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#process">How We Work</a></li>
-        <li><a href="#contact-service">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
 
-  <!-- Service hero section -->
-  <section class="service-hero">
-    <div class="container">
-      <h1>Precision Plumbing <span style="color:#FCD34D;">& Lasting Solutions</span></h1>
-      <p style="font-size: 1.2rem; max-width: 700px; margin: 20px auto;">From hidden leaks to full bathroom overhauls – our team brings expertise and thousands of real project images. Serving Kenya with pride.</p>
-      <a href="#contact-service" class="btn-primary">Book a Service <i class="fas fa-calendar-alt"></i></a>
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo-area">
+      <img class="logo-img" src="https://i.pinimg.com/736x/82/e2/ac/82e2acbb3205823110f5fd7adf3914bf.jpg" alt="Vikram Plumbing Logo" />
+      <div class="brand-name">Vikram <span>Plumbing</span></div>
     </div>
-  </section>
+    <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="service.html" class="active">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <!-- Core services - completely new list and images -->
-  <section class="section" id="services">
-    <div class="container">
-      <h2 class="section-title">What <span>We Deliver</span></h2>
-      <p class="section-subtitle">Tailored plumbing interventions for homes, businesses & heavy infrastructure – all backed by a satisfaction guarantee.</p>
-      <div class="services-grid">
-        <div class="card fade-in">
-          <img class="service-img" src="https://images.unsplash.com/photo-1607472586893-edb57cf0f34c?w=600&auto=format" alt="drain unblocking with high pressure" />
-          <div class="card-content">
-            <h3>Drain Unblocking & Jetting</h3>
-            <p>High-pressure water jetting clears blockages fast. Eco-friendly and non-invasive.</p>
-            <div class="service-tags"><span class="tag">24/7</span><span class="tag">Emergency</span></div>
-          </div>
-        </div>
-        <div class="card fade-in">
-          <img class="service-img" src="https://images.unsplash.com/photo-1585704032915-5e16c033f649?w=600&auto=format" alt="leak detection specialist" />
-          <div class="card-content">
-            <h3>Advanced Leak Detection</h3>
-            <p>Thermal & acoustic sensors locate hidden leaks without destroying walls or floors.</p>
-            <div class="service-tags"><span class="tag">Non-invasive</span><span class="tag">Water saving</span></div>
-          </div>
-        </div>
-        <div class="card fade-in">
-          <img class="service-img" src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&auto=format" alt="water heater repair" />
-          <div class="card-content">
-            <h3>Water Heater Repair & Install</h3>
-            <p>Electric, gas, solar & tankless heaters. Fast diagnosis, same-day fix.</p>
-            <div class="service-tags"><span class="tag">Energy efficient</span><span class="tag">Warranty</span></div>
-          </div>
-        </div>
-        <div class="card fade-in">
-          <img class="service-img" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&auto=format" alt="pipe relining" />
-          <div class="card-content">
-            <h3>Pipe Relining & Rehabilitation</h3>
-            <p>No-dig trenchless pipe repair. Extend the life of old pipes without excavation.</p>
-            <div class="service-tags"><span class="tag">Trenchless</span><span class="tag">Durable</span></div>
-          </div>
-        </div>
-        <div class="card fade-in">
-          <img class="service-img" src="https://images.unsplash.com/photo-1581092335871-44c9e6a6f3e6?w=600&auto=format" alt="bathroom renovation plumbing" />
-          <div class="card-content">
-            <h3>Bathroom & Kitchen Overhaul</h3>
-            <p>Complete redesign, fixture upgrades, and leak-proof piping for modern spaces.</p>
-            <div class="service-tags"><span class="tag">Renovation</span><span class="tag">Design</span></div>
-          </div>
-        </div>
-        <div class="card fade-in">
-          <img class="service-img" src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600&auto=format" alt="commercial plumbing" />
-          <div class="card-content">
-            <h3>Commercial & Industrial Plumbing</h3>
-            <p>Restaurants, hotels, factories – grease traps, backflow prevention, large-scale installs.</p>
-            <div class="service-tags"><span class="tag">Heavy duty</span><span class="tag">Compliance</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery: plenty of images, fresh and captivating -->
-  <section class="section" id="gallery" style="background: var(--gray-bg);">
-    <div class="container">
-      <h2 class="section-title">Project <span>Showcase</span> | Real Results</h2>
-      <p class="section-subtitle">Scroll through our visual journey – every image reflects quality work across Kenya. From emergency fixes to luxury fittings.</p>
-      <div class="gallery-mega">
-        <div class="gallery-item fade-in"><img src="https://i.pinimg.com/736x/94/5c/24/945c24d260b50a7e9388a8e09c93e215.jpg" alt="industrial water filtration" /><div class="gallery-caption">💧 Industrial multi-stage filtration</div></div>
-        <div class="gallery-item fade-in"><img src="https://i.pinimg.com/736x/1d/75/0a/1d750af353474d492d78ae8c0be7df13.jpg" alt="commercial bathroom gold finish" /><div class="gallery-caption">✨ Brushed gold commercial washroom</div></div>
-        <div class="gallery-item fade-in"><img src="https://i.pinimg.com/736x/9a/db/fa/9adbfa2e89008054f428c6f3fe7280d8.jpg" alt="pipe installation in progress" /><div class="gallery-caption">🔧 Precision pipe installation</div></div>
-        <div class="gallery-item fade-in"><img src="https://i.pinimg.com/736x/44/0e/f0/440ef00057875574e56cbbe7abdb049f.jpg" alt="modern bathroom faucets" /><div class="gallery-caption">🚰 High-end bathroom fixtures</div></div>
-        <div class="gallery-item fade-in"><img src="https://i.pinimg.com/736x/25/2d/46/252d46e78b531a803be272aed145357a.jpg" alt="frameless glass shower" /><div class="gallery-caption">🚿 Frameless glass & rain shower</div></div>
-        <div class="gallery-item fade-in"><img src="https://i.pinimg.com/736x/19/46/c5/1946c580123398e02968fd2481ac3197.jpg" alt="commercial pipe manifold" /><div class="gallery-caption">📐 PPR manifold distribution</div></div>
-        <div class="gallery-item fade-in"><img src="https://images.unsplash.com/photo-1585704032915-5e16c033f649?w=600&auto=format" alt="leak detection thermal camera" /><div class="gallery-caption">🌡️ Thermal leak detection</div></div>
-        <div class="gallery-item fade-in"><img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&auto=format" alt="water heater maintenance" /><div class="gallery-caption">⚡ Water heater expert</div></div>
-        <div class="gallery-item fade-in"><img src="https://i.pinimg.com/736x/80/e5/33/80e533bc0c835b1bb22e422a03758f82.jpg" alt="fire pump system" /><div class="gallery-caption">🔥 Fire pump installation</div></div>
-        <div class="gallery-item fade-in"><img src="https://i.pinimg.com/736x/a5/93/11/a59311280c0210e4d423b68ac4907a4a.jpg" alt="industrial fire pump control" /><div class="gallery-caption">🏭 Industrial fire safety</div></div>
-        <div class="gallery-item fade-in"><img src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?w=600&auto=format" alt="plumber fixing drain" /><div class="gallery-caption">🛠️ Emergency drain unblock</div></div>
-        <div class="gallery-item fade-in"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&auto=format" alt="bathroom remodeling" /><div class="gallery-caption">🏠 Complete bathroom remake</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Process section unique to service page -->
-  <section class="section" id="process">
-    <div class="container">
-      <h2 class="section-title">Simple <span>4‑Step Service Flow</span></h2>
-      <p class="section-subtitle">From your first call to final inspection – transparency and craftsmanship.</p>
-      <div class="process-steps">
-        <div class="step fade-in"><div class="step-number">1</div><h4>Diagnostic</h4><p>On‑site assessment with advanced tools.</p></div>
-        <div class="step fade-in"><div class="step-number">2</div><h4>Quote & Plan</h4><p>Detailed estimate, transparent pricing.</p></div>
-        <div class="step fade-in"><div class="step-number">3</div><h4>Flawless Execution</h4><p>Clean, respectful, timely repair.</p></div>
-        <div class="step fade-in"><div class="step-number">4</div><h4>Quality Handover</h4><p>Warranty & aftercare support.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why choose us (different from index) -->
-  <section class="section" style="background: var(--gray-light);">
-    <div class="container">
-      <h2 class="section-title">Why <span>We’re Different</span></h2>
-      <div class="why-grid">
-        <div class="why-item fade-in"><i class="fas fa-clock"></i><h4>Rapid Response</h4><p>Average arrival time: 35 minutes in urban areas. 24/7/365.</p></div>
-        <div class="why-item fade-in"><i class="fas fa-shield-alt"></i><h4>Workmanship Warranty</h4><p>12‑month guarantee on repairs & installations.</p></div>
-        <div class="why-item fade-in"><i class="fas fa-camera"></i><h4>Photo Proof</h4><p>We document every stage – before, during & after.</p></div>
-        <div class="why-item fade-in"><i class="fas fa-hand-holding-usd"></i><h4>Fair & Fixed Pricing</h4><p>No hidden fees, upfront cost breakdown.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Performance counters with fresh numbers -->
-  <section class="stats-counter-section">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item"><div class="stat-number" data-count="247">0+</div><div class="stat-label">Projects Delivered</div></div>
-        <div class="stat-item"><div class="stat-number" data-count="98">0%</div><div class="stat-label">Repeat Customers</div></div>
-        <div class="stat-item"><div class="stat-number" data-count="4.8">0</div><div class="stat-label">⭐ Average Rating</div></div>
-        <div class="stat-item"><div class="stat-number" data-count="22">0+</div><div class="stat-label">Years Combined Exp</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Client testimonials new quotes -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Hear From <span>Our Clients</span></h2>
-      <div class="testimonial-grid">
-        <div class="testimonial-card fade-in"><i class="fas fa-quote-left"></i><p>"They unclogged our main sewer line at midnight – fast, clean and professional. Highly recommend!"</p><h4>— Samuel O., Eldoret</h4></div>
-        <div class="testimonial-card fade-in"><i class="fas fa-quote-left"></i><p>"Vikram Plumbing renovated our guest bathrooms. The tiling, fixtures and piping are flawless. Real gallery-worthy work."</p><h4>— Linet M., Nairobi</h4></div>
-        <div class="testimonial-card fade-in"><i class="fas fa-quote-left"></i><p>"Their leak detection saved us thousands of shillings in water bills. Very honest team."</p><h4>— David K., Kisumu</h4></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Emergency CTA banner -->
+<section class="service-hero">
   <div class="container">
-    <div class="cta-banner fade-in">
-      <h3>Plumbing crisis? We're ready 24/7</h3>
-      <p>Call the hotline or fill the form – our team will be at your door within the hour.</p>
-      <a href="#contact-service" class="btn-outline-light" style="margin-top: 20px; display: inline-block;">Get Urgent Help →</a>
+    <h1>Every Plumbing <span style="color:#FCD34D;">Category, One Reliable Team</span></h1>
+    <p style="font-size:1.2rem; max-width:700px; margin:20px auto;">From household kitchens to industrial fire systems – each service is detailed in its own row for complete clarity.</p>
+    <a href="#contact" class="btn-primary">Get an expert quote <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="container">
+    <h2 class="section-title">Our <span>Specialised Categories</span></h2>
+    <p class="section-subtitle">Each service category stands alone, making it easy to find what you need. Explore below.</p>
+
+    <!-- CATEGORY 1: KITCHEN PLUMBING -->
+    <div class="service-category fade-in">
+      <div class="cat-img-box"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&auto=format" alt="Kitchen plumbing"></div>
+      <div class="cat-details">
+        <h3><i class="fas fa-utensils"></i> Kitchen Plumbing</h3>
+        <p>Complete kitchen plumbing solutions for homes, restaurants, and cafes. Fast leak repairs and new installations.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check-circle"></i> Sink & faucet replacement</li>
+          <li><i class="fas fa-check-circle"></i> Garbage disposal units</li>
+          <li><i class="fas fa-check-circle"></i> Dishwasher & ice maker hookups</li>
+          <li><i class="fas fa-check-circle"></i> Grease trap cleaning & maintenance</li>
+        </ul>
+        <span class="cat-tag">Residential & Commercial</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 2: BATHROOM PLUMBING -->
+    <div class="service-category reverse fade-in">
+      <div class="cat-img-box"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format" alt="Bathroom plumbing"></div>
+      <div class="cat-details">
+        <h3><i class="fas fa-bath"></i> Bathroom & Toilet</h3>
+        <p>From luxury renovations to emergency toilet repairs, we handle everything with precision.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check-circle"></i> Toilet repair / replacement</li>
+          <li><i class="fas fa-check-circle"></i> Shower & tub installation</li>
+          <li><i class="fas fa-check-circle"></i> Vanity & sink upgrades</li>
+          <li><i class="fas fa-check-circle"></i> Hidden leak detection in walls</li>
+        </ul>
+        <span class="cat-tag">Modern & Traditional</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 3: GAS PLUMBING (NEW) -->
+    <div class="service-category fade-in">
+      <div class="cat-img-box"><img src="https://images.unsplash.com/photo-1581092335871-44c9e6a6f3e6?w=800&auto=format" alt="Gas plumbing"></div>
+      <div class="cat-details">
+        <h3><i class="fas fa-fire"></i> Gas Plumbing & LPG Systems</h3>
+        <p>Certified gas fitters for domestic and commercial LPG piping, cookers, water heaters, and leak detection.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check-circle"></i> Gas pipe installation (copper/steel)</li>
+          <li><i class="fas fa-check-circle"></i> Gas leak detection & repair</li>
+          <li><i class="fas fa-check-circle"></i> Commercial kitchen gas lines</li>
+          <li><i class="fas fa-check-circle"></i> Gas water heater connection</li>
+        </ul>
+        <span class="cat-tag">Safety Certified</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 4: INDUSTRIAL / FACTORY PLUMBING -->
+    <div class="service-category reverse fade-in">
+      <div class="cat-img-box"><img src="https://i.pinimg.com/736x/a5/93/11/a59311280c0210e4d423b68ac4907a4a.jpg" alt="Industrial plumbing"></div>
+      <div class="cat-details">
+        <h3><i class="fas fa-industry"></i> Industrial & Factory Plumbing</h3>
+        <p>Heavy-duty pipework, process piping, and high-volume water systems for manufacturing plants.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check-circle"></i> Large-diameter steel/PVC piping</li>
+          <li><i class="fas fa-check-circle"></i> Industrial pumps & booster sets</li>
+          <li><i class="fas fa-check-circle"></i> Cooling water systems</li>
+          <li><i class="fas fa-check-circle"></i> Effluent & waste treatment lines</li>
+        </ul>
+        <span class="cat-tag">24/7 industrial support</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 5: FIRE PROTECTION SYSTEMS -->
+    <div class="service-category fade-in">
+      <div class="cat-img-box"><img src="https://i.pinimg.com/736x/80/e5/33/80e533bc0c835b1bb22e422a03758f82.jpg" alt="Fire pump system"></div>
+      <div class="cat-details">
+        <h3><i class="fas fa-fire-extinguisher"></i> Fire Pump & Suppression</h3>
+        <p>Design, installation, and maintenance of fire sprinkler systems, hydrants, and electric/diesel fire pumps.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check-circle"></i> Fire pump set installation</li>
+          <li><i class="fas fa-check-circle"></i> Hydrant & sprinkler piping</li>
+          <li><i class="fas fa-check-circle"></i> Jockey pump maintenance</li>
+          <li><i class="fas fa-check-circle"></i> Annual compliance testing</li>
+        </ul>
+        <span class="cat-tag">NFPA standards</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 6: WATER TREATMENT & FILTRATION -->
+    <div class="service-category reverse fade-in">
+      <div class="cat-img-box"><img src="https://i.pinimg.com/736x/94/5c/24/945c24d260b50a7e9388a8e09c93e215.jpg" alt="Water treatment"></div>
+      <div class="cat-details">
+        <h3><i class="fas fa-tint"></i> Water Treatment & Filtration</h3>
+        <p>Whole-house filtration, reverse osmosis, UV sterilization, and commercial softening systems.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check-circle"></i> Multi-stage sediment/carbon filters</li>
+          <li><i class="fas fa-check-circle"></i> Reverse osmosis plants</li>
+          <li><i class="fas fa-check-circle"></i> Water softener installation</li>
+          <li><i class="fas fa-check-circle"></i> UV disinfection for boreholes</li>
+        </ul>
+        <span class="cat-tag">Clean water guaranteed</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 7: DRAINAGE & SEWER (Emergency) -->
+    <div class="service-category fade-in">
+      <div class="cat-img-box"><img src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?w=800&auto=format" alt="Drain cleaning"></div>
+      <div class="cat-details">
+        <h3><i class="fas fa-toilet"></i> Drainage & Sewer Services</h3>
+        <p>Emergency drain unblocking, CCTV inspection, and trenchless pipe repairs for residential and municipal lines.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check-circle"></i> High-pressure drain jetting</li>
+          <li><i class="fas fa-check-circle"></i> Root intrusion removal</li>
+          <li><i class="fas fa-check-circle"></i> Pipe relining (no-dig)</li>
+          <li><i class="fas fa-check-circle"></i> Sewer line camera inspection</li>
+        </ul>
+        <span class="cat-tag">24/7 emergency response</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 8: COMMERICAL & HOSPITALITY PLUMBING -->
+    <div class="service-category reverse fade-in">
+      <div class="cat-img-box"><img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800&auto=format" alt="Hotel plumbing"></div>
+      <div class="cat-details">
+        <h3><i class="fas fa-hotel"></i> Hospitality & Commercial</h3>
+        <p>Hotels, restaurants, gyms, and office buildings – full plumbing maintenance and installations.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check-circle"></i> Backflow prevention & testing</li>
+          <li><i class="fas fa-check-circle"></i> Grease interceptor cleaning</li>
+          <li><i class="fas fa-check-circle"></i> High-volume water heaters</li>
+          <li><i class="fas fa-check-circle"></i> Scheduled maintenance plans</li>
+        </ul>
+        <span class="cat-tag">Zero downtime solutions</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 9: OUTDOOR & IRRIGATION -->
+    <div class="service-category fade-in">
+      <div class="cat-img-box"><img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&auto=format" alt="Outdoor plumbing"></div>
+      <div class="cat-details">
+        <h3><i class="fas fa-leaf"></i> Outdoor & Irrigation</h3>
+        <p>Garden taps, sprinkler systems, underground pipe repair, and rainwater harvesting setups.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check-circle"></i> Automatic sprinkler installation</li>
+          <li><i class="fas fa-check-circle"></i> Leak detection in yard lines</li>
+          <li><i class="fas fa-check-circle"></i> Rainwater tank plumbing</li>
+          <li><i class="fas fa-check-circle"></i> Hose bib replacement</li>
+        </ul>
+        <span class="cat-tag">Eco-friendly irrigation</span>
+      </div>
+    </div>
+
+    <!-- CATEGORY 10: HIGH-RISE & MULTI-STOREY BUILDINGS -->
+    <div class="service-category reverse fade-in">
+      <div class="cat-img-box"><img src="https://i.pinimg.com/736x/5e/6a/b7/5e6ab764dfa64f5bb1413257040eb39f.jpg" alt="High-rise plumbing"></div>
+      <div class="cat-details">
+        <h3><i class="fas fa-building"></i> High-Rise & Multi-Storey</h3>
+        <p>Pressure boosting, riser pipe installation, and stack maintenance for apartments and tall buildings.</p>
+        <ul class="service-features">
+          <li><i class="fas fa-check-circle"></i> Booster pump systems</li>
+          <li><i class="fas fa-check-circle"></i> Riser pipe replacement</li>
+          <li><i class="fas fa-check-circle"></i> Drainage stack unblocking</li>
+          <li><i class="fas fa-check-circle"></i> Pressure regulation</li>
+        </ul>
+        <span class="cat-tag">Engineered for height</span>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- Contact section identical pattern but new ID -->
-  <section id="contact-service" class="section">
-    <div class="container">
-      <h2 class="section-title">Request <span>Service or Quote</span></h2>
-      <p class="section-subtitle">Tell us about your plumbing needs, and we’ll get back to you within 30 minutes.</p>
-      <div class="contact-grid">
-        <div class="contact-info fade-in">
-          <h3>Let’s connect</h3>
-          <div class="contact-detail"><i class="fas fa-phone-alt"></i><span>+254 722 135 507</span></div>
-          <div class="contact-detail"><i class="fas fa-envelope"></i><span>Vplumbing@gmail.com</span></div>
-          <div class="contact-detail"><i class="fas fa-map-marker-alt"></i><span>Eldoret / Nairobi, Kenya</span></div>
-          <p><strong>🚨 Emergency hotline:</strong> 24/7 for burst pipes, gas leaks, or drain floods.</p>
-          <div style="margin-top: 25px;"><img src="https://i.pinimg.com/736x/5e/68/15/5e6815a4769c94348d08ed61716becb3.jpg" style="width: 70px; border-radius: 18px;" alt="trust badge"></div>
-        </div>
-        <div class="contact-form fade-in">
-          <h3>Send a message</h3>
-          <form id="serviceContactForm">
-            <div class="form-group"><input type="text" placeholder="Full name" required id="contactName"></div>
-            <div class="form-group"><input type="email" placeholder="Email address" required id="contactEmail"></div>
-            <div class="form-group"><input type="tel" placeholder="Phone number" id="contactPhone"></div>
-            <div class="form-group"><textarea rows="4" placeholder="Describe your issue or required service..." required id="contactMsg"></textarea></div>
-            <button type="submit" class="btn-primary" style="width:100%;">Send Request →</button>
-          </form>
-        </div>
+<!-- Contact section is embedded inside footer as per user request (full footer with emergency + form) -->
+<footer id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Left side: emergency & contact info -->
+      <div class="footer-contact-block">
+        <h3>Plumbing crisis? We're ready 24/7</h3>
+        <p>Call the hotline or fill the form – our team will be at your door within the hour.</p>
+        <a href="#" class="btn-outline-light" style="margin: 20px 0; display: inline-block;">Get Urgent Help →</a>
+        
+        <h3 style="margin-top: 30px;">Request Service or Quote</h3>
+        <p>Tell us about your plumbing needs, and we’ll get back to you within 30 minutes.</p>
+        
+        <div class="contact-detail"><i class="fas fa-phone-alt"></i><span>+254 722 135 507</span></div>
+        <div class="contact-detail"><i class="fas fa-envelope"></i><span>Vplumbing@gmail.com</span></div>
+        <div class="contact-detail"><i class="fas fa-map-marker-alt"></i><span>Eldoret / Nairobi, Kenya</span></div>
+        <p><strong>🚨 Emergency hotline:</strong> 24/7 for burst pipes, gas leaks, or drain floods.</p>
+        <div class="trust-badge"><img src="https://i.pinimg.com/736x/5e/68/15/5e6815a4769c94348d08ed61716becb3.jpg" alt="trust badge"></div>
+      </div>
+
+      <!-- Right side: message form -->
+      <div class="footer-form-block">
+        <h3>Send a message</h3>
+        <form id="footerContactForm">
+          <input type="text" placeholder="Full name" required>
+          <input type="email" placeholder="Email address" required>
+          <input type="tel" placeholder="Phone number">
+          <textarea rows="4" placeholder="Describe your issue or required service..." required></textarea>
+          <button type="submit" class="btn-primary" style="width:100%;">Send Request →</button>
+        </form>
       </div>
     </div>
-  </section>
 
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-col">
-          <img src="https://i.pinimg.com/736x/82/e2/ac/82e2acbb3205823110f5fd7adf3914bf.jpg" style="height: 48px; border-radius: 12px;" alt="Vikram Logo" />
-          <p style="margin-top: 12px;">Where Trust Flows.<br />Rooted in Excellence, Flowing with Reliability.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Explore</h4>
-          <a href="index.html">Home</a>
-          <a href="service.html">Services</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact-service">Contact</a>
-        </div>
-        <div class="footer-col">
-          <h4>Support</h4>
-          <a href="#">Emergency: +254722135507</a>
-          <a href="#">service@vikramplumbing.co.ke</a>
-        </div>
+    <!-- Bottom footer with logo, explore, support, copyright -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-col">
+        <img src="https://i.pinimg.com/736x/82/e2/ac/82e2acbb3205823110f5fd7adf3914bf.jpg" style="height: 48px; border-radius: 12px; margin-bottom: 12px;" alt="Vikram Logo">
+        <p>Where Trust Flows.<br>Rooted in Excellence, Flowing with Reliability.</p>
       </div>
-      <div class="copyright">© 2026 Vikram Plumbing Services — Excellence in Plumbing & Drainage. Visual proof of quality.</div>
+      <div class="footer-bottom-col">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="#services">Categories</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-bottom-col">
+        <h4>Support</h4>
+        <a href="#">Emergency: +254722135507</a>
+        <a href="#">service@vikramplumbing.co.ke</a>
+      </div>
     </div>
-  </footer>
+    <div class="copyright" style="text-align: center; margin-top: 32px; padding-top: 24px; border-top: 1px solid #2D5A7A;">
+      © 2026 Vikram Plumbing Services — Excellence in Plumbing & Drainage. Visual proof of quality.
+    </div>
+  </div>
+</footer>
 
-  <script>
-    const menuBtn = document.getElementById('mobile-menu');
-    const navLinksEl = document.getElementById('nav-links');
-    if (menuBtn && navLinksEl) {
-      menuBtn.addEventListener('click', () => navLinksEl.classList.toggle('active'));
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        const target = document.querySelector(targetId);
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth' });
-          if (navLinksEl && navLinksEl.classList.contains('active')) navLinksEl.classList.remove('active');
-        }
-      });
-    });
-
-    // fade in observer
-    const fadeElements = document.querySelectorAll('.fade-in');
-    const fadeObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-    }, { threshold: 0.1 });
-    fadeElements.forEach(el => fadeObserver.observe(el));
-
-    function animateNumber(el, target, suffix = '') {
-      let current = 0;
-      const step = Math.ceil(target / 55);
-      const timer = setInterval(() => {
-        current += step;
-        if (current >= target) {
-          el.innerText = target + suffix;
-          clearInterval(timer);
-        } else el.innerText = current + suffix;
-      }, 20);
-    }
-
-    const statNumbers = document.querySelectorAll('.stat-number');
-    const statObs = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const raw = entry.target.getAttribute('data-count');
-          if (raw) {
-            let suffix = '';
-            if (raw.includes('%')) suffix = '%';
-            else if (raw.includes('.')) suffix = '';
-            else suffix = '+';
-            const num = parseFloat(raw);
-            animateNumber(entry.target, num, suffix === '+' ? '+' : (suffix === '%' ? '%' : ''));
-          }
-          statObs.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.5 });
-    statNumbers.forEach(stat => statObs.observe(stat));
-
-    const contactForm = document.getElementById('serviceContactForm');
-    if (contactForm) {
-      contactForm.addEventListener('submit', function(e) {
+<script>
+  const menuBtn = document.getElementById('mobile-menu');
+  const navLinksEl = document.getElementById('nav-links');
+  if (menuBtn && navLinksEl) {
+    menuBtn.addEventListener('click', () => navLinksEl.classList.toggle('active'));
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      const target = document.querySelector(targetId);
+      if (target) {
         e.preventDefault();
-        alert('✅ Request sent! Vikram Plumbing will reply within 30 minutes. For emergencies, call +254722135507.');
-        contactForm.reset();
-      });
-    }
-  </script>
+        target.scrollIntoView({ behavior: 'smooth' });
+        if (navLinksEl && navLinksEl.classList.contains('active')) navLinksEl.classList.remove('active');
+      }
+    });
+  });
+  const fadeElements = document.querySelectorAll('.fade-in');
+  const fadeObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  fadeElements.forEach(el => fadeObserver.observe(el));
+
+  const form = document.getElementById('footerContactForm');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('✅ Request sent! Vikram Plumbing will reply within 30 minutes. For emergencies, call +254722135507.');
+      form.reset();
+    });
+  }
+</script>
 </body>
 </html>
